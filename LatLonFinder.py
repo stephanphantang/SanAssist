@@ -10,4 +10,3 @@ def coorfinder(address):
     lon = response[0]["lon"]
     return [float(lat),float(lon)]
 
-print(coorfinder("ABYMES RN1"))

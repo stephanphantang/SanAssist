@@ -26,8 +26,5 @@ def distance(coor1, coor2):
      
      
 # driver code
-ville1 = coorfinder("Marseille")
-ville2 = coorfinder("Paris")
 
-print(distance(ville1,ville2))
 

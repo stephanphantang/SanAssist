@@ -1,0 +1,5 @@
+from WaterGetScore import GetScoreWater
+from getscore  import getscoreair
+def LaunchAlgo(ville):
+    scoreair = getscoreair(ville)
+    

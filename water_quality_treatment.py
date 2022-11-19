@@ -11,7 +11,7 @@ commune_latlon = commune_name.drop_duplicates()
 
 nitrates_concentration= []
 for i in range(441):    
-    nitrates_concentration.append(rd.normalvariate(18,15))
+    nitrates_concentration.append(rd.normalvariate(30,16))
 
 #nitrates is in mg/L, over 50mg/L danger for health
 nitrates_concentration_all_positive= list(np.abs(nitrates_concentration))

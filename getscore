@@ -1,7 +1,7 @@
 import pandas as pd
 from LatLonFinder import coorfinder
 from DistCalculator import distance
-def getscore(ville):
+def GetScoreAir(ville):
     df = pd.read_csv("air_quality_df2.csv")
     coorville=coorfinder(ville)
     #création liste contentant en premier la valeur de la propriété(concentration), la distance minimale entre la ville la plus proche déjà parcourue et la ville en input et l'index
@@ -88,7 +88,5 @@ def getscore(ville):
 
 #list_property = temp_df.loc[list_dist.index(min(list_dist)), :].values.tolist()
 
-a = ["Marseille","Paris","Strasbourg","Brest","Bordeaux","Ajaccio"]
-for i in a:
-    getscore(i)
+
 

@@ -6,7 +6,8 @@ rd.seed(10)
 
 commune= pd.read_csv("air_quality_df2.csv", sep=",")
 
-commune_name= list(set(list(commune["nom site"])))
+commune_name= commune[["nom site","Lat","Lon"]]
+commune_latlon = commune_name.drop_duplicates()
 
 nitrates_concentration= []
 for i in range(441):    
@@ -22,7 +23,7 @@ for j in range(441):
 #nitrites is in mg/L, over 3mg/L danger for health
 nitrites_concentration_all_positive= list(np.abs(nitrites_concentration))
 
-dictionnary_water = {"nom_centre":commune_name, "nitrite (mg/L)": nitrites_concentration_all_positive, "nitrate (mg/L)": nitrates_concentration_all_positive}
+dictionnary_water = {"nom_centre":commune_latlon["nom site"], "Lat": commune_latlon["Lat"], "Lon": commune_latlon["Lon"] , "nitrite (mg/L)": nitrites_concentration_all_positive, "nitrate (mg/L)": nitrates_concentration_all_positive}
 
 water_df= pd.DataFrame(data = dictionnary_water)
 

@@ -1,5 +1,14 @@
 from WaterGetScore import GetScoreWater
-from getscore  import getscoreair
+from GetScore  import GetScoreAir
+import statistics as st
 def LaunchAlgo(ville):
-    scoreair = getscoreair(ville)
-    
+    Scoretotal = []
+    scoreair = GetScoreAir(ville)
+    scorewater = GetScoreWater(ville)
+    Scoretotal+=scoreair
+    Scoretotal+=scorewater
+    print(Scoretotal)
+    FinalScore = st.mean(Scoretotal)
+    return FinalScore
+print(LaunchAlgo("Paris"))
+

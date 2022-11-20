@@ -78,7 +78,6 @@ def GetScoreAir(ville):
         scoreCO=((maxpropCO-propCO[0])/(maxpropCO))*100
 
 
-    print([scoreCO,scoreNO2,scorePPM10,scorePPM25])
     return [scoreCO,scoreNO2,scorePPM10,scorePPM25]
 
 

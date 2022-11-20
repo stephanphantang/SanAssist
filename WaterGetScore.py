@@ -26,7 +26,3 @@ def GetScoreWater(ville):
         ScoreNitri = ((MaxNitri - PropNitri)/MaxNitri)*100
     
     return [ScoreNitra,ScoreNitri]
-
-a = ["Marseille","Paris","Lyon","Toulouse","Ajaccio"]
-for i in a:
-    print(GetScoreWater(i))

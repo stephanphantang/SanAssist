@@ -4,17 +4,17 @@ San Assist is a project of a web application that will help you to find health d
 
 ## Usages
 
-To use our application, you just have to fill the form with a french city name.   
-Our first algorithm will compare the name of the city with all the existed one and return the GPS location of the city.   
-After it, we will use the public data set to request data corresponding to the location. The objectives is to find the nearest Prelevment Center to get the more efficient data. 
-Our second algorithm will compare the result with the OMS recommandation result, and return a relatives score out of a hundred.  
-The django app will take this score, and the result of data check and show it on a result page.
+To use our application, you just have to fill the form with a french city name.      
+Our first algorithm will compare the name of the city with all the existed one and return the GPS location of the city.     
+After it, we will use the public data set to request data corresponding to the location. The objectives is to find the nearest Prelevment Center to get the more efficient data.     
+Our second algorithm will compare the result with the OMS recommandation result, and return a relatives score out of a hundred.   
+The django app will take this score, and the result of data check and show it on a result page.   
 
 
 ## Technical Aspect 
 
 We have two technical part in this project :   
-- An Algorythm that will process the selection of data
+- An Algorithm that will process the selection of data
 - A Django Web Appplication that will show the data
 
 For constructing the Algorithms we used several datasets and Python libraries : 

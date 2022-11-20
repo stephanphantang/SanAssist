@@ -1,0 +1,9 @@
+name,threshold,recommandations
+"Monoxyde de Carbone",4,"réduisez, voire reportez, les activités physiques et sportives intenses (dont les compétitions)."
+"Dioxyde d'Azote",10,"réduisez, voire reportez, les activités physiques et sportives intenses (dont les compétitions)"
+"PM10",15,"Peut causer des troubles cardiaques et pulmonaires, des bronchites, de l'asthme, portez un masque, évitez les zones à fort trafic routier, aux périodes de pointe et privilégiez les activités modérées."
+"PM2,5",5,"Peut causer des troubles cardiaques et pulmonaires, des bronchites, de l'asthme, portez un masque, évitez les zones à fort trafic routier, aux périodes de pointe et privilégiez les activités modérées."
+"Nitrate",50,"Eau non potable, cancérigène, risque de problêmes sur l'oxygénation du sang"
+"Nitrite",3,"Eau non potable, cancérigène, risque de problêmes sur l'oxygénation du sang"
+
+

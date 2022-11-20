@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <title></title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="container-fluid main_container">
+    <div class="d-flex mh-100 row justify-content-center align-items-center">
+
+      <div class="text-center my-4">
+        <h1> Titre du Projet </h1>
+      </div>
+
+
+
+      <form class="form-group row my-3 w-50 d-flex justify-content-center" action="home/show_result" method="post">
+        {% csrf_token %}
+        <div class="form-control row my-2">
+        {{ form }}
+        </div>
+      <input class="btn btn-primary w-25 my-2" type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+
+  </div>
+</body>
+
+</html>

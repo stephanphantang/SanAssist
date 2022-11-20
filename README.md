@@ -2,6 +2,13 @@
 
 San Assist is a project of a web application that will help you to find health data about your location and compare it with OMS recommendation.
 
+## Demo
+
+![](./assets/form.png | width=50)) 
+![](./assets/result.png | width=25)
+
+
+
 ## Usages
 
 To use our application, you just have to fill the form with a french city name.      

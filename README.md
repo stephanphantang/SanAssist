@@ -8,8 +8,9 @@ San Assist is a project of a web application that will help you to find health d
 
 ------
 
-![](./assets/result.png)
+![](./assets/result.png)   
 
+* The text (OMS recommendation) are temporary, everything is not finished yet about filtering them for the index.
 
 
 ## Usages

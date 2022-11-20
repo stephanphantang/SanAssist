@@ -4,8 +4,8 @@ San Assist is a project of a web application that will help you to find health d
 
 ## Demo
 
-![](./assets/form.png | width="50") 
-![](./assets/result.png | width="25")
+![](./assets/form.png) 
+![](./assets/result.png)
 
 
 

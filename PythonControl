@@ -26,4 +26,4 @@ def LaunchAlgo(ville):
 
     return FinalList
 
-print(LaunchAlgo("Paris"))
+print(LaunchAlgo("Lyon"))

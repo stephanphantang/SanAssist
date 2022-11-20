@@ -22,7 +22,6 @@ def GetScoreAir(ville):
                 propCO[1]=temp_dist
                 propCO[0]=df["valeur brute"][i]
                 propCO[2]=i
-                print(propCO[2])
             if df["valeur brute"][i]>maxpropCO:
                 maxpropCO=df["valeur brute"][i]
 
@@ -57,22 +56,22 @@ def GetScoreAir(ville):
     # print(maxpropNO2)
 
     df_threshold = pd.read_csv("ThreshDB.csv")
-    if propPM10[0]<= df_threshold["threshold"][0]:
+    if propPM10[0]<= df_threshold["threshold"][2]:
         scorePPM10=100
     else:
         scorePPM10=((maxpropPM10-propPM10[0])/(maxpropPM10))*100
 
-    if propPM25[0]<= df_threshold["threshold"][1]:
+    if propPM25[0]<= df_threshold["threshold"][3]:
         scorePPM25=100
     else:
         scorePPM25=((maxpropPM25-propPM25[0])/(maxpropPM25))*100
 
-    if propNO2[0]<= df_threshold["threshold"][2]:
+    if propNO2[0]<= df_threshold["threshold"][1]:
         scoreNO2=100
     else:
         scoreNO2=((maxpropNO2-propNO2[0])/(maxpropNO2))*100
 
-    if propCO[0]<= df_threshold["threshold"][3]:
+    if propCO[0]<= df_threshold["threshold"][0]:
         scoreCO=100
     else:
         scoreCO=((maxpropCO-propCO[0])/(maxpropCO))*100

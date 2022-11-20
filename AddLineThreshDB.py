@@ -14,7 +14,11 @@ def addline(lstadd):
         dictwriter_object.writerow(d)
          # Close the file object
         f_object.close()
-    
+
+b =["Nitrate", 50, "Eau non potable, cancérigène, risque de problèmes sur l'oxygénation du sang"]
+a = ["Nitrite", 3, "Eau non potable, cancérigène, risque de problèmes sur l'oxygénation du sang"]
+addline(a)
+addline(b)
         
 
 

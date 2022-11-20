@@ -39,7 +39,6 @@ for i in df1["nom site"]:
 df1["Lat"]=LatCity
 df1["Lon"]=LonCity
 
-print(df1)
 
 
 
@@ -59,7 +58,7 @@ for i in df2["nom site"]:
 df2["Lat"]=LatCity
 df2["Lon"]=LonCity
 
-print(df2)
+
 
 LatCity=[]
 LonCity = []
@@ -77,7 +76,7 @@ for i in df3["nom site"]:
 df3["Lat"]=LatCity
 df3["Lon"]=LonCity
 
-print(df3)
+
 
 frames = [df1, df2, df3]
 
